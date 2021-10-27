@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		35514055199FC92BA94EDF65 /* Pods_DiaryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429817F854190D5966312AF0 /* Pods_DiaryApp.framework */; };
+		7447467127292C47001BAA6E /* DetailTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7447467027292C47001BAA6E /* DetailTask.storyboard */; };
+		7447467527292C77001BAA6E /* DetailTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447467427292C77001BAA6E /* DetailTaskViewController.swift */; };
+		7447467727292C8D001BAA6E /* DetailTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7447467627292C8D001BAA6E /* DetailTaskView.swift */; };
+		7450FA0D272953BB0080201E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA0C272953BB0080201E /* Task.swift */; };
+		7450FA0F272956A40080201E /* DetailTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA0E272956A40080201E /* DetailTaskModel.swift */; };
+		7450FA1227295ADF0080201E /* DetailTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */; };
 		74B942632729284C0098FCFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B942622729284C0098FCFC /* AppDelegate.swift */; };
 		74B942652729284C0098FCFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B942642729284C0098FCFC /* SceneDelegate.swift */; };
 		74B942672729284C0098FCFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B942662729284C0098FCFC /* ViewController.swift */; };
@@ -20,6 +26,12 @@
 		29F2A85C7C6BFAABF46CF2A8 /* Pods-DiaryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryApp.debug.xcconfig"; path = "Target Support Files/Pods-DiaryApp/Pods-DiaryApp.debug.xcconfig"; sourceTree = "<group>"; };
 		429817F854190D5966312AF0 /* Pods_DiaryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiaryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48AC7BA0ECDA9816B3F661A1 /* Pods-DiaryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiaryApp.release.xcconfig"; path = "Target Support Files/Pods-DiaryApp/Pods-DiaryApp.release.xcconfig"; sourceTree = "<group>"; };
+		7447467027292C47001BAA6E /* DetailTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailTask.storyboard; sourceTree = "<group>"; };
+		7447467427292C77001BAA6E /* DetailTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskViewController.swift; sourceTree = "<group>"; };
+		7447467627292C8D001BAA6E /* DetailTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskView.swift; sourceTree = "<group>"; };
+		7450FA0C272953BB0080201E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		7450FA0E272956A40080201E /* DetailTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskModel.swift; sourceTree = "<group>"; };
+		7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskDelegate.swift; sourceTree = "<group>"; };
 		74B9425F2729284C0098FCFC /* DiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B942622729284C0098FCFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74B942642729284C0098FCFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +68,82 @@
 				29F2A85C7C6BFAABF46CF2A8 /* Pods-DiaryApp.debug.xcconfig */,
 				48AC7BA0ECDA9816B3F661A1 /* Pods-DiaryApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7447466B27292BF1001BAA6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7447466C27292BFF001BAA6E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7447466E27292C21001BAA6E /* DetailTask */,
+				7447466D27292C12001BAA6E /* CalendarAndTasks */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7447466D27292C12001BAA6E /* CalendarAndTasks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CalendarAndTasks;
+			sourceTree = "<group>";
+		};
+		7447466E27292C21001BAA6E /* DetailTask */ = {
+			isa = PBXGroup;
+			children = (
+				7450FA1027295ABF0080201E /* DelegateProtocols */,
+				7447467327292C5D001BAA6E /* Model */,
+				7447467227292C54001BAA6E /* Controller */,
+				7447466F27292C32001BAA6E /* View */,
+			);
+			path = DetailTask;
+			sourceTree = "<group>";
+		};
+		7447466F27292C32001BAA6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7447467027292C47001BAA6E /* DetailTask.storyboard */,
+				7447467627292C8D001BAA6E /* DetailTaskView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7447467227292C54001BAA6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7447467427292C77001BAA6E /* DetailTaskViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7447467327292C5D001BAA6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7450FA0E272956A40080201E /* DetailTaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7450FA0B272953A30080201E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7450FA0C272953BB0080201E /* Task.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7450FA1027295ABF0080201E /* DelegateProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */,
+			);
+			path = DelegateProtocols;
 			sourceTree = "<group>";
 		};
 		74B942562729284C0098FCFC = {
@@ -81,6 +167,9 @@
 		74B942612729284C0098FCFC /* DiaryApp */ = {
 			isa = PBXGroup;
 			children = (
+				7450FA0B272953A30080201E /* Entities */,
+				7447466C27292BFF001BAA6E /* Presentation */,
+				7447466B27292BF1001BAA6E /* Resources */,
 				74B942622729284C0098FCFC /* AppDelegate.swift */,
 				74B942642729284C0098FCFC /* SceneDelegate.swift */,
 				74B942662729284C0098FCFC /* ViewController.swift */,
@@ -154,6 +243,7 @@
 			files = (
 				74B9426F2729284C0098FCFC /* LaunchScreen.storyboard in Resources */,
 				74B9426C2729284C0098FCFC /* Assets.xcassets in Resources */,
+				7447467127292C47001BAA6E /* DetailTask.storyboard in Resources */,
 				74B9426A2729284C0098FCFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				74B942672729284C0098FCFC /* ViewController.swift in Sources */,
+				7450FA0F272956A40080201E /* DetailTaskModel.swift in Sources */,
 				74B942632729284C0098FCFC /* AppDelegate.swift in Sources */,
+				7447467527292C77001BAA6E /* DetailTaskViewController.swift in Sources */,
+				7450FA1227295ADF0080201E /* DetailTaskDelegate.swift in Sources */,
+				7447467727292C8D001BAA6E /* DetailTaskView.swift in Sources */,
+				7450FA0D272953BB0080201E /* Task.swift in Sources */,
 				74B942652729284C0098FCFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
