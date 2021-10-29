@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Task View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AddTaskViewController" customModule="DiaryApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="AddTaskView" customModule="DiaryApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rGq-bI-ygG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="747"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LS-Lk-eJZ">
+                                <rect key="frame" x="20" y="811" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add task"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5LS-Lk-eJZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="1kh-6d-nKc"/>
+                            <constraint firstItem="rGq-bI-ygG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4Ph-n4-WXm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5LS-Lk-eJZ" secondAttribute="trailing" constant="20" id="U3q-Qq-ltF"/>
+                            <constraint firstItem="5LS-Lk-eJZ" firstAttribute="top" secondItem="rGq-bI-ygG" secondAttribute="bottom" constant="20" id="jDV-nH-jZc"/>
+                            <constraint firstItem="rGq-bI-ygG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pAV-1T-nC1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="5LS-Lk-eJZ" secondAttribute="bottom" constant="20" id="rwc-6z-emy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rGq-bI-ygG" secondAttribute="trailing" id="sat-nn-hpQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addTaskTableView" destination="rGq-bI-ygG" id="uJk-F4-yFP"/>
+                        <outlet property="addTaskView" destination="5EZ-qb-Rvc" id="yPm-Mb-KaD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

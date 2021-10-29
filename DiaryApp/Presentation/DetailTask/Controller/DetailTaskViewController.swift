@@ -16,7 +16,8 @@ class DetailTaskViewController: UIViewController {
     
     //MARK: - IBOutlets
     @IBOutlet var detailTaskView: DetailTaskView!
-
+    @IBOutlet weak var detailTaskTableView: UITableView!
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +27,9 @@ class DetailTaskViewController: UIViewController {
     
     //MARK: - Private Functions
     private func configureDetailTaskView() {
-        detailTaskView.detailTaskTableView.delegate = detailTaskView
-        detailTaskView.detailTaskTableView.dataSource = detailTaskView
-        detailTaskView.detailTaskTableView.register(UINib(nibName: "LabelCellTableViewCell", bundle: nil), forCellReuseIdentifier: "labelCell")
-        detailTaskView.detailTaskTableView.register(UINib(nibName: "ColorTableViewCell", bundle: nil), forCellReuseIdentifier: "colorCell")
+        detailTaskTableView.delegate = detailTaskView
+        detailTaskTableView.dataSource = detailTaskView
+        detailTaskTableView.register(UINib(nibName: "LabelCellTableViewCell", bundle: nil), forCellReuseIdentifier: "labelCell")
+        detailTaskTableView.register(UINib(nibName: "ColorTableViewCell", bundle: nil), forCellReuseIdentifier: "colorCell")
     }
 }

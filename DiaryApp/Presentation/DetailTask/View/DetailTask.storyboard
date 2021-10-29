@@ -30,11 +30,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Muz-CB-3CL" secondAttribute="trailing" id="alg-Ub-t6X"/>
                             <constraint firstItem="Muz-CB-3CL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nB1-tw-Ceu"/>
                         </constraints>
-                        <connections>
-                            <outlet property="detailTaskTableView" destination="Muz-CB-3CL" id="l6o-ay-GQ3"/>
-                        </connections>
                     </view>
                     <connections>
+                        <outlet property="detailTaskTableView" destination="Muz-CB-3CL" id="gea-Zo-08Q"/>
                         <outlet property="detailTaskView" destination="5EZ-qb-Rvc" id="ftP-ve-DEx"/>
                     </connections>
                 </viewController>

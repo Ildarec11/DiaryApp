@@ -19,9 +19,19 @@
 		744C2303272C769E0094696C /* LabelCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744C2301272C769E0094696C /* LabelCellTableViewCell.xib */; };
 		744C2306272C76B10094696C /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C2304272C76B10094696C /* ColorTableViewCell.swift */; };
 		744C2307272C76B10094696C /* ColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744C2305272C76B10094696C /* ColorTableViewCell.xib */; };
+		744EA53F272CAA5300479275 /* AddTaskEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EA53E272CAA5300479275 /* AddTaskEnums.swift */; };
+		744EA542272CB25100479275 /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EA540272CB25100479275 /* ColorTableViewCell.swift */; };
+		744EA543272CB25100479275 /* ColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744EA541272CB25100479275 /* ColorTableViewCell.xib */; };
 		7450FA0D272953BB0080201E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA0C272953BB0080201E /* Task.swift */; };
 		7450FA0F272956A40080201E /* DetailTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA0E272956A40080201E /* DetailTaskModel.swift */; };
 		7450FA1227295ADF0080201E /* DetailTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */; };
+		7470258D272C9BA900C2C24F /* AddTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7470258C272C9BA900C2C24F /* AddTask.storyboard */; };
+		74702591272CA0F200C2C24F /* DateChooseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470258F272CA0F200C2C24F /* DateChooseTableViewCell.swift */; };
+		74702592272CA0F200C2C24F /* DateChooseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74702590272CA0F200C2C24F /* DateChooseTableViewCell.xib */; };
+		74702595272CA11800C2C24F /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74702593272CA11800C2C24F /* TextFieldTableViewCell.swift */; };
+		74702596272CA11800C2C24F /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74702594272CA11800C2C24F /* TextFieldTableViewCell.xib */; };
+		74702598272CA3C800C2C24F /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74702597272CA3C800C2C24F /* AddTaskViewController.swift */; };
+		7470259A272CA46F00C2C24F /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74702599272CA46F00C2C24F /* AddTaskView.swift */; };
 		7472E4E4272A0BAB00979B06 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7472E4E2272A0BAB00979B06 /* TaskTableViewCell.swift */; };
 		7472E4E5272A0BAB00979B06 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7472E4E3272A0BAB00979B06 /* TaskTableViewCell.xib */; };
 		74B942632729284C0098FCFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B942622729284C0098FCFC /* AppDelegate.swift */; };
@@ -48,9 +58,19 @@
 		744C2301272C769E0094696C /* LabelCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelCellTableViewCell.xib; sourceTree = "<group>"; };
 		744C2304272C76B10094696C /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
 		744C2305272C76B10094696C /* ColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorTableViewCell.xib; sourceTree = "<group>"; };
+		744EA53E272CAA5300479275 /* AddTaskEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskEnums.swift; sourceTree = "<group>"; };
+		744EA540272CB25100479275 /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		744EA541272CB25100479275 /* ColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorTableViewCell.xib; sourceTree = "<group>"; };
 		7450FA0C272953BB0080201E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		7450FA0E272956A40080201E /* DetailTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskModel.swift; sourceTree = "<group>"; };
 		7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskDelegate.swift; sourceTree = "<group>"; };
+		7470258C272C9BA900C2C24F /* AddTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTask.storyboard; sourceTree = "<group>"; };
+		7470258F272CA0F200C2C24F /* DateChooseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateChooseTableViewCell.swift; sourceTree = "<group>"; };
+		74702590272CA0F200C2C24F /* DateChooseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateChooseTableViewCell.xib; sourceTree = "<group>"; };
+		74702593272CA11800C2C24F /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		74702594272CA11800C2C24F /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		74702597272CA3C800C2C24F /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		74702599272CA46F00C2C24F /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		7472E4E2272A0BAB00979B06 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		7472E4E3272A0BAB00979B06 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		74B9425F2729284C0098FCFC /* DiaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +141,10 @@
 		7431FB84272C3606003D8F40 /* CreateTask */ = {
 			isa = PBXGroup;
 			children = (
+				7470258E272CA0D300C2C24F /* Cells */,
+				7470258B272C9B9000C2C24F /* View */,
 				7470258A272C9B7600C2C24F /* Controller */,
+				744EA53E272CAA5300479275 /* AddTaskEnums.swift */,
 			);
 			path = CreateTask;
 			sourceTree = "<group>";
@@ -231,8 +254,31 @@
 		7470258A272C9B7600C2C24F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				74702597272CA3C800C2C24F /* AddTaskViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7470258B272C9B9000C2C24F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7470258C272C9BA900C2C24F /* AddTask.storyboard */,
+				74702599272CA46F00C2C24F /* AddTaskView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7470258E272CA0D300C2C24F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7470258F272CA0F200C2C24F /* DateChooseTableViewCell.swift */,
+				74702590272CA0F200C2C24F /* DateChooseTableViewCell.xib */,
+				74702593272CA11800C2C24F /* TextFieldTableViewCell.swift */,
+				74702594272CA11800C2C24F /* TextFieldTableViewCell.xib */,
+				744EA540272CB25100479275 /* ColorTableViewCell.swift */,
+				744EA541272CB25100479275 /* ColorTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		74B942562729284C0098FCFC = {
@@ -330,10 +376,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74702592272CA0F200C2C24F /* DateChooseTableViewCell.xib in Resources */,
+				7470258D272C9BA900C2C24F /* AddTask.storyboard in Resources */,
 				744C2303272C769E0094696C /* LabelCellTableViewCell.xib in Resources */,
 				744C2307272C76B10094696C /* ColorTableViewCell.xib in Resources */,
 				7472E4E5272A0BAB00979B06 /* TaskTableViewCell.xib in Resources */,
+				744EA543272CB25100479275 /* ColorTableViewCell.xib in Resources */,
 				740F25F127297FE200FC1647 /* CalendarAndTask.storyboard in Resources */,
+				74702596272CA11800C2C24F /* TextFieldTableViewCell.xib in Resources */,
 				74B9426F2729284C0098FCFC /* LaunchScreen.storyboard in Resources */,
 				74B9426C2729284C0098FCFC /* Assets.xcassets in Resources */,
 				7447467127292C47001BAA6E /* DetailTask.storyboard in Resources */,
@@ -393,13 +443,19 @@
 				74B942672729284C0098FCFC /* ViewController.swift in Sources */,
 				74C11A1E272AE772003FC406 /* CalendarAndTaskViewController.swift in Sources */,
 				7450FA0F272956A40080201E /* DetailTaskModel.swift in Sources */,
+				74702595272CA11800C2C24F /* TextFieldTableViewCell.swift in Sources */,
 				743D6A492729DF6E00B85A26 /* CalendarAndTaskModel.swift in Sources */,
 				74B942632729284C0098FCFC /* AppDelegate.swift in Sources */,
 				744C2306272C76B10094696C /* ColorTableViewCell.swift in Sources */,
+				74702598272CA3C800C2C24F /* AddTaskViewController.swift in Sources */,
+				744EA542272CB25100479275 /* ColorTableViewCell.swift in Sources */,
 				744C22FF272C523B0094696C /* DetailTableEnums.swift in Sources */,
+				7470259A272CA46F00C2C24F /* AddTaskView.swift in Sources */,
 				744C2302272C769E0094696C /* LabelCellTableViewCell.swift in Sources */,
 				7447467527292C77001BAA6E /* DetailTaskViewController.swift in Sources */,
 				7450FA1227295ADF0080201E /* DetailTaskDelegate.swift in Sources */,
+				744EA53F272CAA5300479275 /* AddTaskEnums.swift in Sources */,
+				74702591272CA0F200C2C24F /* DateChooseTableViewCell.swift in Sources */,
 				7447467727292C8D001BAA6E /* DetailTaskView.swift in Sources */,
 				7450FA0D272953BB0080201E /* Task.swift in Sources */,
 				7472E4E4272A0BAB00979B06 /* TaskTableViewCell.swift in Sources */,

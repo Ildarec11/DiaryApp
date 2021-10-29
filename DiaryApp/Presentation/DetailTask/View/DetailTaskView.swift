@@ -13,9 +13,6 @@ class DetailTaskView: UIView {
     //MARK: - Properties
     var event: EventDescriptor? = nil
     
-    //MARK: - IBOutlets
-    @IBOutlet weak var detailTaskTableView: UITableView!
-        
     //MARK: - Private funtions
     private func convertStringFromDate(_ date: Date) -> String {
         let dateFormatter = DateFormatter()

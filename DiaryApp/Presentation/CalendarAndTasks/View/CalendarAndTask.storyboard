@@ -29,6 +29,9 @@
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                             </button>
+                            <connections>
+                                <segue destination="PNt-EH-JhE" kind="presentation" id="ToK-tX-ZFs"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -38,6 +41,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCL-EX-nlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2855.072463768116" y="-13.392857142857142"/>
+        </scene>
+        <!--AddTask-->
+        <scene sceneID="Vr7-kl-mES">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddTask" id="PNt-EH-JhE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LIb-EC-Zz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3541" y="-113"/>
         </scene>
         <!--DetailTask-->
         <scene sceneID="hcg-St-pCg">
