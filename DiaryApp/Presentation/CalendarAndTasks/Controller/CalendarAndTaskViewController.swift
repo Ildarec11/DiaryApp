@@ -22,8 +22,10 @@ class CalendarAndTaskViewController: DayViewController {
         event2.startDate = Date().addingTimeInterval(2*60*60)
         event2.endDate = Date().addingTimeInterval(4*60*60)
         event2.text = "вечерняя прогулка"
+        event2.description = "тест тест етарворпвоа"
         event2.backgroundColor = UIColor.brown
         event.text = "пивко с друзьями"
+        event.description = " fsdskfls;kf;s "
         var events: [Event] = []
         event.startDate = Date()
         event.endDate = Date().addingTimeInterval(20*50*60*60)
@@ -49,8 +51,8 @@ class CalendarAndTaskViewController: DayViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             guard let detailVC = segue.destination as? DetailTaskViewController else { return }
-            let event = sender as? EventDescriptorWrap
-            detailVC.detailTaskView.event = event
+            let event = sender as? EventDescriptor
+            detailVC.event = event
         }
     }
 }

@@ -19,7 +19,6 @@
 		744C2303272C769E0094696C /* LabelCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744C2301272C769E0094696C /* LabelCellTableViewCell.xib */; };
 		744C2306272C76B10094696C /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C2304272C76B10094696C /* ColorTableViewCell.swift */; };
 		744C2307272C76B10094696C /* ColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744C2305272C76B10094696C /* ColorTableViewCell.xib */; };
-		744C230A272C8A250094696C /* EventDescriptionWrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744C2309272C8A250094696C /* EventDescriptionWrap.swift */; };
 		7450FA0D272953BB0080201E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA0C272953BB0080201E /* Task.swift */; };
 		7450FA0F272956A40080201E /* DetailTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA0E272956A40080201E /* DetailTaskModel.swift */; };
 		7450FA1227295ADF0080201E /* DetailTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */; };
@@ -49,7 +48,6 @@
 		744C2301272C769E0094696C /* LabelCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelCellTableViewCell.xib; sourceTree = "<group>"; };
 		744C2304272C76B10094696C /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
 		744C2305272C76B10094696C /* ColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorTableViewCell.xib; sourceTree = "<group>"; };
-		744C2309272C8A250094696C /* EventDescriptionWrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDescriptionWrap.swift; sourceTree = "<group>"; };
 		7450FA0C272953BB0080201E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		7450FA0E272956A40080201E /* DetailTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskModel.swift; sourceTree = "<group>"; };
 		7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +121,7 @@
 		7431FB84272C3606003D8F40 /* CreateTask */ = {
 			isa = PBXGroup;
 			children = (
+				7470258A272C9B7600C2C24F /* Controller */,
 			);
 			path = CreateTask;
 			sourceTree = "<group>";
@@ -217,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				7450FA0C272953BB0080201E /* Task.swift */,
-				744C2309272C8A250094696C /* EventDescriptionWrap.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -228,6 +226,13 @@
 				7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */,
 			);
 			path = DelegateProtocols;
+			sourceTree = "<group>";
+		};
+		7470258A272C9B7600C2C24F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		74B942562729284C0098FCFC = {
@@ -390,7 +395,6 @@
 				7450FA0F272956A40080201E /* DetailTaskModel.swift in Sources */,
 				743D6A492729DF6E00B85A26 /* CalendarAndTaskModel.swift in Sources */,
 				74B942632729284C0098FCFC /* AppDelegate.swift in Sources */,
-				744C230A272C8A250094696C /* EventDescriptionWrap.swift in Sources */,
 				744C2306272C76B10094696C /* ColorTableViewCell.swift in Sources */,
 				744C22FF272C523B0094696C /* DetailTableEnums.swift in Sources */,
 				744C2302272C769E0094696C /* LabelCellTableViewCell.swift in Sources */,

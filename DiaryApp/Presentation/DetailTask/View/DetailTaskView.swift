@@ -11,7 +11,7 @@ import CalendarKit
 class DetailTaskView: UIView {
     
     //MARK: - Properties
-    var event: EventDescriptorWrap? = nil
+    var event: EventDescriptor? = nil
     
     //MARK: - IBOutlets
     @IBOutlet weak var detailTaskTableView: UITableView!
@@ -24,7 +24,7 @@ class DetailTaskView: UIView {
     }
 }
 
-extension DetailTaskView: UITableViewDelegate, UITableViewDataSource {
+extension DetailTaskView: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return DetailTaskTableSection.allCases.count
@@ -43,7 +43,7 @@ extension DetailTaskView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let eventWrap = event else { return UITableViewCell() }
+        guard let event = event else { return UITableViewCell() }
         guard let section = DetailTaskTableSection(rawValue: indexPath.section) else { return UITableViewCell() }
         switch section {
         case .NameAndColor:
@@ -51,11 +51,11 @@ extension DetailTaskView: UITableViewDelegate, UITableViewDataSource {
             switch nameAndColor {
             case .name:
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell") as? LabelCellTableViewCell else { return UITableViewCell() }
-                cell.configure(text: eventWrap.event.text, style: .largeTitle)
+                cell.configure(text: event.text, style: .largeTitle)
                 return cell
             case .color:
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "colorCell") as? ColorTableViewCell else { return UITableViewCell() }
-                cell.setColor(eventWrap.event.color)
+                cell.setColor(event.backgroundColor)
                 return cell
             }
         case .StartAndFinishDate:
@@ -63,17 +63,35 @@ extension DetailTaskView: UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell") as? LabelCellTableViewCell else { return UITableViewCell() }
             switch startAndFinishDate {
             case .startDate:
-                cell.configure(text: "Start date: \(convertStringFromDate(eventWrap.event.startDate))", style: .regular)
+                cell.configure(text: "Start date: \(convertStringFromDate(event.startDate))", style: .regular)
                 return cell
             case .finishDate:
-                cell.configure(text: "End date: \(convertStringFromDate(eventWrap.event.endDate))", style: .regular)
+                cell.configure(text: "End date: \(convertStringFromDate(event.endDate))", style: .regular)
                 return cell
             }
         case .Description:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "labelCell") as? LabelCellTableViewCell else { return UITableViewCell() }
-            cell.configure(text: eventWrap.description, style: .regular)
+            cell.configure(text: event.description, style: .regular)
             return cell
         }
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        guard let section = DetailTaskTableSection(rawValue: section) else { return "" }
+        switch section {
+        case .NameAndColor:
+            return ""
+        case .StartAndFinishDate:
+            return "Duration"
+        case .Description:
+            return "Description"
+        }
+    }
+}
+
+extension DetailTaskView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

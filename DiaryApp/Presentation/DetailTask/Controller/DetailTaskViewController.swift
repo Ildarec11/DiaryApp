@@ -12,7 +12,7 @@ class DetailTaskViewController: UIViewController {
 
     //MARK: - Properties
     var detailTaskModel = DetailTaskModel()
-    var event: EventDescriptorWrap?
+    var event: EventDescriptor?
     
     //MARK: - IBOutlets
     @IBOutlet var detailTaskView: DetailTaskView!
@@ -20,7 +20,8 @@ class DetailTaskViewController: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        detailTaskView.event = event
+        configureDetailTaskView()
     }
     
     //MARK: - Private Functions
