@@ -2,14 +2,14 @@
 # platform :ios, '9.0'
 
 target 'DiaryApp' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'RealmSwift'
+	pod 'CalendarKit'
+	pod 'RealmSwift'	
 
   # Pods for DiaryApp
 
-  pod 'SwiftLint'
+	pod 'SwiftLint'
 
 
 end

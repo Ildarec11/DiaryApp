@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import CalendarKit
 
 class DetailTaskViewController: UIViewController {
 
     //MARK: - Properties
     var detailTaskModel = DetailTaskModel()
-    var task: Task?
+    var event: EventDescriptorWrap?
     
     //MARK: - IBOutlets
     @IBOutlet var detailTaskView: DetailTaskView!
@@ -19,14 +20,14 @@ class DetailTaskViewController: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
     
     //MARK: - Private Functions
     private func configureDetailTaskView() {
-        if let task = task {
-            detailTaskView.configure(task: task)
-        }
-        detailTaskView.taskNameTextView.delegate = detailTaskModel
-        detailTaskView.descriptionTextView.delegate = detailTaskModel
+        detailTaskView.detailTaskTableView.delegate = detailTaskView
+        detailTaskView.detailTaskTableView.dataSource = detailTaskView
+        detailTaskView.detailTaskTableView.register(UINib(nibName: "LabelCellTableViewCell", bundle: nil), forCellReuseIdentifier: "labelCell")
+        detailTaskView.detailTaskTableView.register(UINib(nibName: "ColorTableViewCell", bundle: nil), forCellReuseIdentifier: "colorCell")
     }
 }

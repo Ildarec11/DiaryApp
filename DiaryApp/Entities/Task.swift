@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import UIKit
 struct Task {
     var name: String
     var startDate: Date
     var endDate: Date
     var description: String
+    var color: UIColor
 }

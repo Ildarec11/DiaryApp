@@ -1,4 +1,5 @@
 PODS:
+  - CalendarKit (1.0.14)
   - Realm (10.17.0):
     - Realm/Headers (= 10.17.0)
   - Realm/Headers (10.17.0)
@@ -7,20 +8,23 @@ PODS:
   - SwiftLint (0.45.0)
 
 DEPENDENCIES:
+  - CalendarKit
   - RealmSwift
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - CalendarKit
     - Realm
     - RealmSwift
     - SwiftLint
 
 SPEC CHECKSUMS:
+  CalendarKit: 89068700d1af62ddb17e00d088a59fa9f8ae04a1
   Realm: 9533276bd76f66aa2fd0d3ffe700c1f6023dcab6
   RealmSwift: 57f5d59aa29852587aad1e861989e7af139894b5
   SwiftLint: e5c7f1fba68eccfc51509d5b2ce1699f5502e0c7
 
-PODFILE CHECKSUM: b0d57d4947e2328be76d499e8416b695c042f6d5
+PODFILE CHECKSUM: 2e8b7496e4524c56b7bcb6092f6a64e5fd277811
 
 COCOAPODS: 1.10.2
