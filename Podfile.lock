@@ -1,5 +1,6 @@
 PODS:
   - CalendarKit (1.0.14)
+  - MKColorPicker (1.2)
   - Realm (10.17.0):
     - Realm/Headers (= 10.17.0)
   - Realm/Headers (10.17.0)
@@ -9,22 +10,25 @@ PODS:
 
 DEPENDENCIES:
   - CalendarKit
+  - MKColorPicker
   - RealmSwift
   - SwiftLint
 
 SPEC REPOS:
   trunk:
     - CalendarKit
+    - MKColorPicker
     - Realm
     - RealmSwift
     - SwiftLint
 
 SPEC CHECKSUMS:
   CalendarKit: 89068700d1af62ddb17e00d088a59fa9f8ae04a1
+  MKColorPicker: 8998b2ab977e4f240fdf254db27a18b810da3cfc
   Realm: 9533276bd76f66aa2fd0d3ffe700c1f6023dcab6
   RealmSwift: 57f5d59aa29852587aad1e861989e7af139894b5
   SwiftLint: e5c7f1fba68eccfc51509d5b2ce1699f5502e0c7
 
-PODFILE CHECKSUM: 2e8b7496e4524c56b7bcb6092f6a64e5fd277811
+PODFILE CHECKSUM: fdf4214ddb1fe4791675985d47223d6c76d8a886
 
 COCOAPODS: 1.10.2

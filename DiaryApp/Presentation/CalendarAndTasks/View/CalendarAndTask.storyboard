@@ -28,14 +28,15 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Add">
                                     <color key="baseForegroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="rbP-OV-9g3" eventType="touchUpInside" id="Zcf-Nf-7hG"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <segue destination="PNt-EH-JhE" kind="presentation" id="ToK-tX-ZFs"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="ois-QD-Mzj" kind="show" identifier="showDetail" id="7aj-Cf-vNA"/>
+                        <segue destination="PNt-EH-JhE" kind="presentation" identifier="addTask" id="MEV-Ba-mjP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCL-EX-nlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

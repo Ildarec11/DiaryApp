@@ -18,12 +18,14 @@ class AddTaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        addTaskView.viewController = self
     }
     
     //MARK: - Private functions
     private func configureTableView() {
         addTaskTableView.register(UINib(nibName: "DateChooseTableViewCell", bundle: nil), forCellReuseIdentifier: "dateChooseCell")
-        addTaskTableView.register(UINib(nibName: "TextFieldTableViewCell", bundle: nil), forCellReuseIdentifier: "textFieldCell")
+        addTaskTableView.register(UINib(nibName: "TextViewTableViewCell", bundle: nil), forCellReuseIdentifier: "textFieldCell")
+        addTaskTableView.register(UINib(nibName: "AddTaskColorTableViewCell", bundle: nil), forCellReuseIdentifier: "colorPickerCell")
         addTaskTableView.dataSource = addTaskView
         //addTaskTableView.delegate = self
     }

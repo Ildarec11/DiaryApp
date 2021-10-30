@@ -10,7 +10,11 @@ import CalendarKit
 
 class CalendarAndTaskViewController: DayViewController {
 
+    //MARK: - IBActions
     
+    @IBAction func addButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "addTask", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

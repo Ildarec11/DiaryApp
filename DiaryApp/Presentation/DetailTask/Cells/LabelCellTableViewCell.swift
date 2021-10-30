@@ -20,7 +20,7 @@ class LabelCellTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    public func configure(text: String?, style: DetailCellStyle) {
+    public func configure(text: String?, style: LabelCellStyle) {
         switch style {
         case .regular:
             cellLabel.text = text
@@ -31,7 +31,7 @@ class LabelCellTableViewCell: UITableViewCell {
     }
 }
 
-enum DetailCellStyle {
+enum LabelCellStyle {
     case regular
     case largeTitle
 }

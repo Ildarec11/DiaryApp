@@ -6,6 +6,8 @@ target 'DiaryApp' do
 
 	pod 'CalendarKit'
 	pod 'RealmSwift'	
+	pod 'MKColorPicker'
+
 
   # Pods for DiaryApp
 

@@ -8,14 +8,10 @@
 import Foundation
 
 enum AddTaskSection: Int, CaseIterable {
-    case nameAndDescription
-    case colorPicker
-    case startAndEndDates
-}
-
-enum NameAndDescription: Int, CaseIterable {
     case name
     case description
+    case colorPicker
+    case startAndEndDates
 }
 
 enum StartAndEndDates: Int, CaseIterable {
