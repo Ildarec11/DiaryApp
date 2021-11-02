@@ -22,19 +22,15 @@ class EventService {
         for model in mainRealm.objects(EventModel.self).filter("(startDate <= %@ AND endDate BETWEEN {%@,%@}) OR (startDate BETWEEN {%@,%@} AND endDate BETWEEN {%@,%@}) OR (startDate BETWEEN {%@,%@} AND endDate >= %@) OR (startDate <= %@ AND endDate >= %@)", startOfTheDay, startOfTheDay, endOfTheDay, startOfTheDay, endOfTheDay, startOfTheDay, endOfTheDay, startOfTheDay, endOfTheDay, endOfTheDay, startOfTheDay, endOfTheDay) {
             models.append(model)
         }
-        //for model in mainRealm.objects(EventModel.self).filter("startDate >= \(date) AND endDate <= \(date)") {
-       //     models.append(model)
-       // }
-        
         let result =  models.map({ model in return mapFromEventModel(eventModel: model, date: date) })
         return result
     }
     
     func deleteEvent(event: Event, completion: (() -> Void)?) {
         let eventModel = mapToEventModel(event: event)
-        try! mainRealm.write({
-            mainRealm.delete(eventModel)
-        })
+        try! mainRealm.write {
+            mainRealm.delete(mainRealm.objects(EventModel.self).filter("name = %@ AND startDate = %@ AND endDate = %@", eventModel.name, eventModel.startDate, eventModel.endDate))
+        }
         completion?()
     }
     

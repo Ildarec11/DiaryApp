@@ -18,16 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Muz-CB-3CL">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="738"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2t-Yf-HaZ">
+                                <rect key="frame" x="174" y="810" width="66" height="31"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="v00-g7-W9q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Muz-CB-3CL" secondAttribute="bottom" id="9fl-JK-OIw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="C2t-Yf-HaZ" secondAttribute="bottom" constant="21" id="4hA-ro-i0X"/>
                             <constraint firstItem="Muz-CB-3CL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LWl-ZN-wLR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Muz-CB-3CL" secondAttribute="trailing" id="alg-Ub-t6X"/>
+                            <constraint firstItem="C2t-Yf-HaZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cga-n6-kkh"/>
                             <constraint firstItem="Muz-CB-3CL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nB1-tw-Ceu"/>
+                            <constraint firstItem="C2t-Yf-HaZ" firstAttribute="top" secondItem="Muz-CB-3CL" secondAttribute="bottom" constant="28" id="wPJ-wy-BXQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -43,6 +54,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

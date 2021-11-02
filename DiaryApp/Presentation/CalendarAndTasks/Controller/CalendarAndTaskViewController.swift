@@ -35,7 +35,8 @@ class CalendarAndTaskViewController: DayViewController {
         if segue.identifier == "showDetail" {
             guard let detailVC = segue.destination as? DetailTaskViewController else { return }
             let event = sender as? EventDescriptor
-            detailVC.event = event
+            detailVC.event = event as? Event
+            detailVC.taskTable = self
         }
         if segue.identifier == "addTask" {
             guard let addTaskVC = segue.destination as? AddTaskViewController else { return }

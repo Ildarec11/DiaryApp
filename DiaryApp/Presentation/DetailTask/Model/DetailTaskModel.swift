@@ -2,26 +2,24 @@
 //  DetailTaskModel.swift
 //  DiaryApp
 //
-//  Created by Ильдар Арсламбеков on 27.10.2021.
+//  Created by Ильдар Арсламбеков on 02.11.2021.
 //
 
 import Foundation
-import UIKit
-class DetailTaskModel: NSObject {
+import CalendarKit
+
+class DetailTaskModel {
     
     //MARK: - Properties
-    var delegate: DetailTaskDelegate?
-}
-
-extension DetailTaskModel: UITextViewDelegate {
-    func textViewDidEndEditing(_ textView: UITextView) {
-        switch textView.tag {
-        case 1:
-            delegate?.changedTaskName()
-        case 2:
-            delegate?.changedTaskDescription()
-        default:
-            return
-        }
+    var rootVC: UIViewController? = nil
+    var taskTable: DayViewController? = nil
+    let eventService: EventService = EventService()
+    
+    //MARK: - Public functions
+    func deleteEvent(event: Event) {
+        eventService.deleteEvent(event: event, completion: {
+            self.taskTable?.reloadData()
+            self.rootVC?.navigationController?.popViewController(animated: true)
+        })
     }
 }

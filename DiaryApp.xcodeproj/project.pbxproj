@@ -25,8 +25,6 @@
 		744C2307272C76B10094696C /* ColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744C2305272C76B10094696C /* ColorTableViewCell.xib */; };
 		744EA53F272CAA5300479275 /* AddTaskEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744EA53E272CAA5300479275 /* AddTaskEnums.swift */; };
 		7450FA0D272953BB0080201E /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA0C272953BB0080201E /* EventModel.swift */; };
-		7450FA0F272956A40080201E /* DetailTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA0E272956A40080201E /* DetailTaskModel.swift */; };
-		7450FA1227295ADF0080201E /* DetailTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */; };
 		7470258D272C9BA900C2C24F /* AddTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7470258C272C9BA900C2C24F /* AddTask.storyboard */; };
 		74702598272CA3C800C2C24F /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74702597272CA3C800C2C24F /* AddTaskViewController.swift */; };
 		7470259A272CA46F00C2C24F /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74702599272CA46F00C2C24F /* AddTaskView.swift */; };
@@ -41,6 +39,7 @@
 		74D7007B272F3D780033B436 /* AddTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D7007A272F3D780033B436 /* AddTaskModel.swift */; };
 		74DF5D78272CB55900FFDF7D /* AddTaskColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF5D76272CB55900FFDF7D /* AddTaskColorTableViewCell.swift */; };
 		74DF5D79272CB55900FFDF7D /* AddTaskColorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DF5D77272CB55900FFDF7D /* AddTaskColorTableViewCell.xib */; };
+		74E291E92731792F00307E2B /* DetailTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E291E82731792F00307E2B /* DetailTaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,8 +63,6 @@
 		744C2305272C76B10094696C /* ColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorTableViewCell.xib; sourceTree = "<group>"; };
 		744EA53E272CAA5300479275 /* AddTaskEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskEnums.swift; sourceTree = "<group>"; };
 		7450FA0C272953BB0080201E /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
-		7450FA0E272956A40080201E /* DetailTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskModel.swift; sourceTree = "<group>"; };
-		7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskDelegate.swift; sourceTree = "<group>"; };
 		7470258C272C9BA900C2C24F /* AddTask.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddTask.storyboard; sourceTree = "<group>"; };
 		74702597272CA3C800C2C24F /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		74702599272CA46F00C2C24F /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
@@ -82,6 +79,7 @@
 		74D7007A272F3D780033B436 /* AddTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskModel.swift; sourceTree = "<group>"; };
 		74DF5D76272CB55900FFDF7D /* AddTaskColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskColorTableViewCell.swift; sourceTree = "<group>"; };
 		74DF5D77272CB55900FFDF7D /* AddTaskColorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskColorTableViewCell.xib; sourceTree = "<group>"; };
+		74E291E82731792F00307E2B /* DetailTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,7 +180,6 @@
 			children = (
 				744C22FD272C4FEE0094696C /* Cells */,
 				744C22FE272C523B0094696C /* DetailTableEnums.swift */,
-				7450FA1027295ABF0080201E /* DelegateProtocols */,
 				7447467327292C5D001BAA6E /* Model */,
 				7447467227292C54001BAA6E /* Controller */,
 				7447466F27292C32001BAA6E /* View */,
@@ -210,7 +207,7 @@
 		7447467327292C5D001BAA6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7450FA0E272956A40080201E /* DetailTaskModel.swift */,
+				74E291E82731792F00307E2B /* DetailTaskModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,14 +229,6 @@
 				7450FA0C272953BB0080201E /* EventModel.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		7450FA1027295ABF0080201E /* DelegateProtocols */ = {
-			isa = PBXGroup;
-			children = (
-				7450FA1127295ADF0080201E /* DetailTaskDelegate.swift */,
-			);
-			path = DelegateProtocols;
 			sourceTree = "<group>";
 		};
 		7470258A272C9B7600C2C24F /* Controller */ = {
@@ -451,11 +440,11 @@
 				74DF5D78272CB55900FFDF7D /* AddTaskColorTableViewCell.swift in Sources */,
 				74B942672729284C0098FCFC /* ViewController.swift in Sources */,
 				74C11A1E272AE772003FC406 /* CalendarAndTaskViewController.swift in Sources */,
-				7450FA0F272956A40080201E /* DetailTaskModel.swift in Sources */,
 				743D6A492729DF6E00B85A26 /* CalendarAndTaskModel.swift in Sources */,
 				743685FF272CCB4200785045 /* TextViewTableViewCell.swift in Sources */,
 				74B942632729284C0098FCFC /* AppDelegate.swift in Sources */,
 				744C2306272C76B10094696C /* ColorTableViewCell.swift in Sources */,
+				74E291E92731792F00307E2B /* DetailTaskModel.swift in Sources */,
 				74702598272CA3C800C2C24F /* AddTaskViewController.swift in Sources */,
 				744C22FF272C523B0094696C /* DetailTableEnums.swift in Sources */,
 				74368603272CCC5800785045 /* DateChooseTableViewCell.swift in Sources */,
@@ -463,7 +452,6 @@
 				7470259A272CA46F00C2C24F /* AddTaskView.swift in Sources */,
 				744C2302272C769E0094696C /* LabelCellTableViewCell.swift in Sources */,
 				7447467527292C77001BAA6E /* DetailTaskViewController.swift in Sources */,
-				7450FA1227295ADF0080201E /* DetailTaskDelegate.swift in Sources */,
 				744EA53F272CAA5300479275 /* AddTaskEnums.swift in Sources */,
 				7447467727292C8D001BAA6E /* DetailTaskView.swift in Sources */,
 				7450FA0D272953BB0080201E /* EventModel.swift in Sources */,
