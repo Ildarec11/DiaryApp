@@ -16,6 +16,7 @@ class ColorTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
 
+    //MARK: - Public functions
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

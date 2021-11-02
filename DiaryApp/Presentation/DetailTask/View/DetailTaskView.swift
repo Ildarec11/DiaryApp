@@ -22,6 +22,7 @@ class DetailTaskView: UIView {
     }
 }
 
+//MARK: - UITableViewDataSource
 extension DetailTaskView: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -87,6 +88,7 @@ extension DetailTaskView: UITableViewDataSource {
     }
 }
 
+//MARK: - UITableViewDelegate
 extension DetailTaskView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

@@ -20,6 +20,7 @@ class LabelCellTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    //MARK: - Public functions
     public func configure(text: String?, style: LabelCellStyle) {
         switch style {
         case .regular:

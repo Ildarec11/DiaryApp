@@ -47,6 +47,7 @@ class AddTaskView: UIView {
     }
 }
 
+//MARK: - UITableViewDataSource
 extension AddTaskView: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -110,5 +111,4 @@ extension AddTaskView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return ""
     }
-    
 }

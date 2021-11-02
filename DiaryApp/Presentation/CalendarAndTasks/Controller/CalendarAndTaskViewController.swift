@@ -18,10 +18,12 @@ class CalendarAndTaskViewController: DayViewController {
         performSegue(withIdentifier: "addTask", sender: self)
     }
     
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    //MARK: - Public functions
     override func eventsForDate(_ date: Date) -> [EventDescriptor] {
         return model.getEventsByDate(date: date)
     }

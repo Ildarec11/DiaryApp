@@ -18,7 +18,6 @@ class AddTaskViewController: UIViewController {
     @IBOutlet var addTaskView: AddTaskView!
     @IBOutlet weak var addTaskTableView: UITableView!
     
-    
     //MARK: - IBActions
     @IBAction func addTaskButtonPressed(_ sender: Any) {
         let validateResult = addTaskView.validate(validEventHandler: { event in

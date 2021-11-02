@@ -11,8 +11,8 @@ class TextViewTableViewCell: UITableViewCell {
     //MARK: - Properties
     private var placeholder: String?
     private var inputHandler: ((String?) -> ())?
-    //MARK: - IBOutlets
     
+    //MARK: - IBOutlets
     @IBOutlet weak var textField: UITextField!
     
     override func awakeFromNib() {
@@ -37,6 +37,7 @@ class TextViewTableViewCell: UITableViewCell {
     }
 }
 
+//MARK: - TextFieldDelegate
 extension TextViewTableViewCell: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         inputHandler?(textField.text)
