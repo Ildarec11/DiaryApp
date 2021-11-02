@@ -43,5 +43,7 @@ class DetailTaskViewController: UIViewController {
         detailTaskTableView.dataSource = detailTaskView
         detailTaskTableView.register(UINib(nibName: "LabelCellTableViewCell", bundle: nil), forCellReuseIdentifier: "labelCell")
         detailTaskTableView.register(UINib(nibName: "ColorTableViewCell", bundle: nil), forCellReuseIdentifier: "colorCell")
+        detailTaskTableView.rowHeight = UITableView.automaticDimension
+        detailTaskTableView.estimatedRowHeight = 44.0;
     }
 }

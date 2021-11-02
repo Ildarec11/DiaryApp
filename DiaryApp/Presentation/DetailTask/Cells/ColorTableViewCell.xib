@@ -22,22 +22,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="15"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="15" id="Oxe-AT-4My"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="Cn2-F3-8CR"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="L2M-ez-QQJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EDI-4k-abc"/>
-                    <constraint firstItem="L2M-ez-QQJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EWH-Vi-xss"/>
-                    <constraint firstAttribute="trailing" secondItem="L2M-ez-QQJ" secondAttribute="trailing" id="NCj-I3-Iyu"/>
-                    <constraint firstAttribute="bottom" secondItem="L2M-ez-QQJ" secondAttribute="bottom" id="XyB-O4-gVn"/>
+                    <constraint firstAttribute="trailing" secondItem="L2M-ez-QQJ" secondAttribute="trailing" id="WXD-RE-u0l"/>
+                    <constraint firstAttribute="bottom" secondItem="L2M-ez-QQJ" secondAttribute="bottom" id="coI-QU-ALr"/>
+                    <constraint firstItem="L2M-ez-QQJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kau-Ja-QFi"/>
+                    <constraint firstItem="L2M-ez-QQJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lVc-p8-oTu"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="colorView" destination="L2M-ez-QQJ" id="eVG-Jc-cNw"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="43.191964285714285"/>
+            <point key="canvasLocation" x="137.68115942028987" y="41.852678571428569"/>
         </tableViewCell>
     </objects>
     <resources>
