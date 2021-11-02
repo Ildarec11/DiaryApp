@@ -10,7 +10,7 @@ class TextViewTableViewCell: UITableViewCell {
     
     //MARK: - Properties
     private var placeholder: String?
-    
+    private var inputHandler: ((String?) -> ())?
     //MARK: - IBOutlets
     
     @IBOutlet weak var textField: UITextField!
@@ -24,14 +24,22 @@ class TextViewTableViewCell: UITableViewCell {
     }
     
     //MARK: - Public functions
-    public func configure(placeholder: String, style: LabelCellStyle) {
+    public func configure(placeholder: String, style: LabelCellStyle, textEnteredHandler: @escaping (String?) -> Void) {
         textField.placeholder = placeholder
+        textField.delegate = self
         switch style {
         case .regular:
-            return
+            textField.font = UIFont.systemFont(ofSize: 15)
         case .largeTitle:
             textField.font = UIFont(name: "GillSans", size: 26)!
         }
+        inputHandler = textEnteredHandler
+    }
+}
+
+extension TextViewTableViewCell: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        inputHandler?(textField.text)
     }
 }
 

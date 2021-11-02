@@ -39,6 +39,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="datePicker" destination="Ric-v0-mHZ" id="v22-jY-5Gk"/>
                 <outlet property="label" destination="JLG-MB-pfi" id="io7-ja-owZ"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="-4.6875"/>

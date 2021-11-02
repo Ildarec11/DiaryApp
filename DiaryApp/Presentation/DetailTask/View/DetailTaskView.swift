@@ -16,7 +16,8 @@ class DetailTaskView: UIView {
     //MARK: - Private funtions
     private func convertStringFromDate(_ date: Date) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .long
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .medium
         return dateFormatter.string(from: date)
     }
 }

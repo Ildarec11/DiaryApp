@@ -14,7 +14,7 @@ class AddTaskColorTableViewCell: UITableViewCell {
     private var controller: UIViewController?
     let colorPicker: ColorPickerViewController = {
         let picker = ColorPickerViewController()
-        picker.allColors = [#colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1), #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1), #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)]
+        picker.allColors = [#colorLiteral(red: 0.6642242074, green: 0.6642400622, blue: 0.6642315388, alpha: 1), #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1), #colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1), #colorLiteral(red: 1, green: 0.5781051517, blue: 0, alpha: 1), #colorLiteral(red: 0.5787474513, green: 0.3215198815, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 0.3285208941, blue: 0.5748849511, alpha: 1)]
         return picker
     }()
     
@@ -42,6 +42,7 @@ class AddTaskColorTableViewCell: UITableViewCell {
     //MARK: - Public functions
     public func configure(parentVC: UIViewController, selectedColorHandler: @escaping (UIColor) -> Void) {
         self.controller = parentVC
+        selectedColorHandler(chooseColorButton.tintColor)
         colorPicker.selectedColor = { color in
             self.chooseColorButton.tintColor = color
             selectedColorHandler(color)

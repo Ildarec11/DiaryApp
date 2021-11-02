@@ -6,6 +6,15 @@
 //
 
 import Foundation
+import CalendarKit
+
 class CalendarAndTaskModel {
     
+    //MARK: - Properties
+    let eventService = EventService()
+    
+    //MARK: - Public functions
+    func getEventsByDate(date: Date) -> [Event] {
+        return eventService.getEventsByDate(date: date)
+    }
 }
