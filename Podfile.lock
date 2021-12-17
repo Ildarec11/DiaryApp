@@ -1,34 +1,42 @@
 PODS:
-  - CalendarKit (1.0.14)
+  - CalendarKit (0.12.3)
   - MKColorPicker (1.2)
   - Realm (10.17.0):
     - Realm/Headers (= 10.17.0)
   - Realm/Headers (10.17.0)
   - RealmSwift (10.17.0):
     - Realm (= 10.17.0)
-  - SwiftLint (0.45.0)
 
 DEPENDENCIES:
-  - CalendarKit
-  - MKColorPicker
+  - CalendarKit (from `https://github.com/Ildarec11/CalendarKit.git`)
+  - MKColorPicker (from `https://github.com/Ildarec11/MKColorPicker.git`)
   - RealmSwift
-  - SwiftLint
 
 SPEC REPOS:
   trunk:
-    - CalendarKit
-    - MKColorPicker
     - Realm
     - RealmSwift
-    - SwiftLint
+
+EXTERNAL SOURCES:
+  CalendarKit:
+    :git: https://github.com/Ildarec11/CalendarKit.git
+  MKColorPicker:
+    :git: https://github.com/Ildarec11/MKColorPicker.git
+
+CHECKOUT OPTIONS:
+  CalendarKit:
+    :commit: e11f0f6d79c0215d64e955bb57ab03e086ff5189
+    :git: https://github.com/Ildarec11/CalendarKit.git
+  MKColorPicker:
+    :commit: 2aa5f2b6d98ad3f19bebfc92d3316975291d2ad4
+    :git: https://github.com/Ildarec11/MKColorPicker.git
 
 SPEC CHECKSUMS:
-  CalendarKit: 89068700d1af62ddb17e00d088a59fa9f8ae04a1
+  CalendarKit: 7d9b437555584f5a208ab30bfff9eed55a8aef9b
   MKColorPicker: 8998b2ab977e4f240fdf254db27a18b810da3cfc
   Realm: 9533276bd76f66aa2fd0d3ffe700c1f6023dcab6
   RealmSwift: 57f5d59aa29852587aad1e861989e7af139894b5
-  SwiftLint: e5c7f1fba68eccfc51509d5b2ce1699f5502e0c7
 
-PODFILE CHECKSUM: fdf4214ddb1fe4791675985d47223d6c76d8a886
+PODFILE CHECKSUM: 251fdf5c326b1c859f0a31d7aa8907c1a780f203
 
 COCOAPODS: 1.10.2

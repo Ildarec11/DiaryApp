@@ -2,16 +2,12 @@
 # platform :ios, '9.0'
 
 target 'DiaryApp' do
-  use_frameworks!
-
-	pod 'CalendarKit'
-	pod 'RealmSwift'	
-	pod 'MKColorPicker'
-
+  use_frameworks!	
 
   # Pods for DiaryApp
 
-	pod 'SwiftLint'
-
-
+	pod 'MKColorPicker', :git => 'https://github.com/Ildarec11/MKColorPicker.git'
+	pod 'CalendarKit', :git => 'https://github.com/Ildarec11/CalendarKit.git'
+	pod 'RealmSwift'
+	
 end
